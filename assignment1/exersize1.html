@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<header>
+    <title>Exersize 1</title>
+    <style>
+        .form_wrapper {
+            border: 1.5px groove rgba(204, 204, 255, 0.5); 
+            width: 275px;
+        }
+        H1 {
+            margin-left: 10px;
+        }
+        .form_item {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .text_input {
+            
+            border: 1.5px groove rgba(204, 204, 255, 0.5); 
+        }
+    </style>
+</header>
+<body>
+    <div class="form_wrapper">
+        <H1>HTML Form</H1>
+
+        <form>
+            <div class="form_item">
+                First Name:
+                <input type="text" class="text_input" description="First Name">
+            </div>
+            
+            <div class="form_item">
+                Last Name:
+                <input type="text" class="text_input" description="Last Name">
+            </div>
+            
+            <div class="form_item">
+                E-mail:
+                <input type="text" class="text_input" description="E-mail">
+            </div>
+
+            <div class="form_item">
+                <input type="radio" id="Undergraduate Student" name="type_of_student">
+                <label for="Undergraduate Student">Undergraduate Student</label>
+            </div>
+
+            <div class="form_item">
+                <input type="radio" id="Graduate Student" name="type_of_student">
+                <label for="Graduate Student" >Graduate Student</label>
+            </div>
+            
+            <div class="form_item">
+                <input type="button" value="Submit" >
+                <input type="button" value="Reset" >
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
