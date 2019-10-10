@@ -2,13 +2,28 @@
 <header>
     <title>Portfolio</title>
     <style>
+        html {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            align-content: center;
+            text-align: center;
+            height: 100%;
+            margin: 0;
+        }
         .form_wrapper {
             border: 1.5px groove rgba(204, 204, 255, 0.5); 
             width: 275px;
             text-align: center;
+            margin: 0 auto;
+            margin-top: 10px;
         }
         H1 {
-            margin-left: 10px;
+            text-align: center;
+            background-color: rgba(204, 204, 255, 0.5);
+            height: 100%;
+            width: 100%;
         }
         h2 {
             align-self: center;
@@ -22,55 +37,110 @@
             align-content: center;
             border: 1.5px groove rgba(204, 204, 255, 0.5); 
         }
+        #contact {
+            margin: 0 auto;
+            align-content: center;
+        }
+        #about {
+            align-content: center;
+            text-align: center;
+            margin: 0 auto;
+            width: 300px;
+            border: 1.5px groove rgba(204, 204, 255, 0.5); 
+        }
+        footer {
+            height: 100px;
+            background-color: rgb(59, 59, 59);
+            color: white;
+            text-align: center;
+        }
+        .content {
+            min-height: 100%;
+            margin-bottom: -100px;
+        }
+        header {
+            margin-top: -20px;
+        }
+        #images {
+            display: inline;
+        }
     </style>
 </header>
 <body>
-    <H1>Portfolio</H1>
-    
-    <section>
+    <header>
+        <H1>Portfolio</H1>
+    </header>
+    <section class="content">
+        
+        
+        
+        <section id="about">
+            <h3>About</h3>
+            <div class="about_me">
+                My name is Alex Saber and I'm a Computer Science Major at PSU.
+            </div>
+        </section>
+        
+        <section id="photos">
+            <h3>Photos of my cat.</h3>
+            <div id="images">
+                <div>
+                        <img id="image-1" src="http://placekitten.com/200/287" alt="">
+                </div>
+                <div>
+                        <img id="image-2" src="http://placekitten.com/200/140" alt="">
+                </div>
+                <div>
+                        <img id="image-3" src="http://placekitten.com/200/139" alt="">
+                </div>
+                
 
+            </div>
+            
+        </section>
+        <section id="contact">
+            <div class="form_wrapper">
+                <H2>Contact Me:</H2>
+
+                <form>
+                    <h2></h2>
+                    <div class="form_item">
+                        First Name:
+                        <input type="text" class="text_input" description="First Name">
+                    </div>
+                    
+                    <div class="form_item">
+                        Last Name:
+                        <input type="text" class="text_input" description="Last Name">
+                    </div>
+                    
+                    <div class="form_item">
+                        E-mail:
+                        <input type="text" class="text_input" description="E-mail">
+                    </div>
+        
+                    <div class="form_item">
+                        <input type="radio" id="Undergraduate Student" name="type_of_student">
+                        <label for="Undergraduate Student">Undergraduate Student</label>
+                    </div>
+        
+                    <div class="form_item">
+                        <input type="radio" id="Graduate Student" name="type_of_student">
+                        <label for="Graduate Student" >Graduate Student</label>
+                    </div>
+                    
+                    <div class="form_item">
+                        <input type="button" value="Send" >
+                        <input type="button" value="Reset" >
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
     </section>
+
+
+    <footer>Copyright Alex Saber 2019</footer>
     
-    <div class="about_me">
-        My name is Alex Saber and I'm a Computer Science Major at PSU.
-    </div>
-
-    <div class="form_wrapper">
-        <H2>Contact Me:</H1>
-
-        <form>
-            <h2></h2>
-            <div class="form_item">
-                First Name:
-                <input type="text" class="text_input" description="First Name">
-            </div>
-            
-            <div class="form_item">
-                Last Name:
-                <input type="text" class="text_input" description="Last Name">
-            </div>
-            
-            <div class="form_item">
-                E-mail:
-                <input type="text" class="text_input" description="E-mail">
-            </div>
-
-            <div class="form_item">
-                <input type="radio" id="Undergraduate Student" name="type_of_student">
-                <label for="Undergraduate Student">Undergraduate Student</label>
-            </div>
-
-            <div class="form_item">
-                <input type="radio" id="Graduate Student" name="type_of_student">
-                <label for="Graduate Student" >Graduate Student</label>
-            </div>
-            
-            <div class="form_item">
-                <input type="button" value="Send" >
-                <input type="button" value="Reset" >
-            </div>
-            
-        </form>
-    </div>
     
 </body>
