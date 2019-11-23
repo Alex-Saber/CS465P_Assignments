@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Exersize 1</title>
+    <style>
+        html, body {
+            height: 100%;
+
+            font-family: Helvetica;
+        }
+
+        body {
+            background: linear-gradient(0.25turn, rgb(10,180,10,0.9),rgb(250,250,20, 0.9));
+        }
+
+        html {
+            margin: auto;
+        }
+
+
+        .form_wrapper {
+
+            border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border-radius:0.5px;
+
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+            width: 275px;
+            background: white;
+            height: 300px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .form_item {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .text_input {
+            border: 0.5px solid grey;
+            border-radius: 2px;
+            height: 25px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #text_box {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 10px;
+            width: 100px;
+            background: cadetblue;
+        }
+
+
+
+
+    </style>
+</header>
+<body>
+    <div class="form_wrapper">
+        <div class="form_item">Contact Us<div>
+
+        <form>
+            <div class="form_item">
+                <input placeholder="Name" type="text" class="text_input" description="Name">
+            </div>
+
+            <div class="form_item">
+                <input type="text" class="text_input" description="Email" placeholder="Email">
+            </div>
+
+            <div class="form_item" id="text_box">
+                <textarea  description="blank box" id="area"></textarea>
+            </div>
+
+            <div class="form_item">
+                <input class="btn" type="button" value="Submit" >
+                <input class="btn" type="button" value="Reset" >
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
