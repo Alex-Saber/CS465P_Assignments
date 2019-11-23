@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Exercise 3 Assignment 4</title>
+
+    <style>
+        html, body {
+            height: 100%;
+
+            font-family: Helvetica;
+        }
+
+        body {
+            background: linear-gradient(0.25turn, rgb(10,180,10,0.9),rgb(250,250,20, 0.9));
+        }
+
+        html {
+            margin: auto;
+        }
+
+
+        .form_wrapper {
+
+            border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border-radius:0.5px;
+
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+            width: 275px;
+            background: white;
+            height: 300px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+
+    </style>
+</header>
+<body>
+    <div class="form_wrapper">
+        <p>Name: <%= name %></p>
+        <p>Email: <%= email %></p>
+        <p>Message: <%= message %></p>
+    </div>
+
+</body>
+</html>

@@ -4,15 +4,6 @@
     <title>Exercise 3 Assignment 4</title>
 
     <script type="text/javascript">
-      let submitForm = function() {
-          let name = document.getElementById("name");
-          let email = document.getElementById("email");
-          let message = document.getElementById("area");
-          console.log("Name: " + name.value);
-          console.log("Email: " + email.value);
-          console.log("Message: " + message.value);
-      };
-
       let reset = function() {
           let name = document.getElementById("name");
           let email = document.getElementById("email");
@@ -82,21 +73,21 @@
     <div class="form_wrapper">
         <div class="form_item">Contact Us<div>
 
-        <form>
+        <form action="/contact" method="POST">
             <div class="form_item">
-                <input id="name" placeholder="Name" type="text" class="text_input" description="Name">
+                <input id="name" placeholder="Name" type="text" class="text_input" description="Name" name="name">
             </div>
 
             <div class="form_item">
-                <input id="email" type="text" class="text_input" description="Email" placeholder="Email">
+                <input id="email" type="text" class="text_input" description="Email" placeholder="Email" name="email">
             </div>
 
             <div class="form_item" id="text_box">
-                <textarea  description="blank box" id="area"></textarea>
+                <textarea  description="blank box" id="area" name="message"></textarea>
             </div>
 
             <div class="form_item">
-                <input class="btn" type="button" value="Submit" onclick="submitForm()" >
+                <input class="btn" type="submit" value="Submit" >
                 <input class="btn" type="button" value="Reset" onclick="reset()">
             </div>
 
