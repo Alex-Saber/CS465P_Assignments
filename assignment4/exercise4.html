@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Exercise 4 assignment 4</title>
+  </head>
+<body>
+    <div><p>Window height: <span id="height"></span></p></div>
+    <div><p>Window width: <span id="width"></span></p></div>
+</body>
+
+<script type="text/javascript">
+    let heightdiv = document.getElementById('height');
+    let widthdiv = document.getElementById('width');
+
+
+    window.onresize = function () {
+        heightdiv.innerHTML = (window.innerHeight);
+        widthdiv.innerHTML = (window.innerWidth);
+    };
+</script>
+</html>

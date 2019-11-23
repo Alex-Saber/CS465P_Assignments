@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+  <head>
+      <title>Exercise 5 assignment 4</title>
+  </head>
+<body style="height:100%; width:100%;">
+    <input class="btn" type="button" value="Randomize" onclick="random_color()">
+</body>
+
+<script type="text/javascript">
+
+    let random_color = function() {
+        let body = document.getElementsByTagName("BODY")[0];
+
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        body.style.background = color;
+    };
+
+</script>
+</html>
