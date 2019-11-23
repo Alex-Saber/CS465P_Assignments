@@ -9,36 +9,33 @@
             height: 100%;
         }
 
-        .row_1 {
+        .navy {
           background: navy;
         }
-        .row_2 {
+        .purple {
           background: purple;
         }
-        .row_3 {
+        .cyan {
           background: darkcyan;
         }
-        .row_4 {
+        .green {
           background: yellowgreen;
         }
-        .row_5 {
+        .red {
           background:salmon;
         }
-        .row_6 {
+        .darkgreen {
           background: green;
         }
 
-        .cyan {
-            background: darkcyan;
-        }
 
-        .row {
+        .row{
             margin-top: 5px;
             margin-bottom:5px;
         }
 
         .column {
-            height: 30px;
+            height: 40px;
         }
 
         span {
@@ -51,43 +48,43 @@
 
     </style>
   </head>
-  <body class="border text-white">
-    <div class="container">
-      <div class="row_1 row">
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-        <span class="col column">span 1</span>
-      </div>
-      <div class="row_2 row">
-          <span class="col column">span 3</span>
-          <span class="col column">span 3</span>
-          <span class="col column">span 3</span>
-          <span class="col column">span 3</span>
-      </div>
-      <div class="row_3 row">
-          <span class="col column">span 4</span>
-          <span class="col column">span 4</span>
-          <span class="col column">span 4</span>
-      </div>
-      <div class="row_4 row">
-          <span class="col column">span 6</span>
-          <span class="col column">span 6</span>
+  <body>
+    <div class="container border text-white">
+      <div class="row">
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
+        <span class="col navy column mr-1">span 1</span>
       </div>
       <div class="row">
-          <span class="col column cyan">span 4</span>
-          <span class="row_5 col column">span 8</span>
+          <span class="col purple column mr-1">span 3</span>
+          <span class="col purple column mr-1">span 3</span>
+          <span class="col purple column mr-1">span 3</span>
+          <span class="col purple column mr-1">span 3</span>
       </div>
-      <div class="row_6 row">
-          <span class="col column">span 12</span>
+      <div class="row">
+          <span class="col cyan column mr-1">span 4</span>
+          <span class="col cyan column mr-1">span 4</span>
+          <span class="col cyan column mr-1">span 4</span>
+      </div>
+      <div class="row">
+          <span class="col green column mr-1">span 6</span>
+          <span class="col green column mr-1">span 6</span>
+      </div>
+      <div class="row">
+          <span class="col column mr-1 cyan">span 4</span>
+          <span class="row_5 col column red mr-1">span 8</span>
+      </div>
+      <div class="row">
+          <span class="col darkgreen column">span 12</span>
       </div>
     </div>
   </body>

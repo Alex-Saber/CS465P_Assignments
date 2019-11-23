@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title> Exercise 3 assignment 3</title>
+<html>
+    <head>
+        <title> Exercise 3 assignment 3</title>
 
-  </head>
-  <body>
-    <div id="box1">One</div>
-    <div id="box2">Two</div>
-    <div id="box3">Three</div>
-    <div id="box4">Four</div>
-    <div id="box5">Five</div>
-    <div id="box6">Six</div>
-    <div id="box7">Seven</div>
-    <div id="box8">Eight</div>
-    <div id="box9">Nine</div>
-    <div id="box10">Ten</div>
-    <div id="box11">Elevent</div>
-    <div id="box12">Twelve</div>
-  </body>
+        <style>
+            .row {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-around;
+                line-height: 90px;
+
+            }
+            .box {
+                background: #3e3e3e;
+                margin: 5px;
+                color: white;
+                font-size: 1.5em;
+                text-align: center;
+                flex: 1 0 auto;
+                height: 100px;
+                width: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="box">One</div>
+            <div class="box">Two</div>
+            <div class="box">Three</div>
+            <div class="box">Four</div>
+
+        </div>
+        <div class="row">
+            <div class="box">Five</div>
+            <div class="box">Six</div>
+            <div class="box">Seven</div>
+            <div class="box">Eight</div>
+
+        </div>
+        <div class="row">
+            <div class="box">Nine</div>
+            <div class="box">Ten</div>
+            <div class="box">Eleven</div>
+            <div class="box">Twelve</div>
+        </div>
+    </body>
 </html>
